@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            let call_time=setInterval(check,1000);
+          function check()
+          {date=new Date();
+            hour=date.getHours();
+            minute=date.getMinutes();
+            second=date.getSeconds();
+                document.getElementById("watch").innerHTML=hour+":"+minute+":"+second;
+               
+          }
+        </script>
+        
+    </head>
+    <body onload="check()">
+     <div id="watch">
+        </div>  
+    </body>
+</html>
